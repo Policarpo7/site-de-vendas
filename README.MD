@@ -10,7 +10,7 @@ Para executar este projeto, você precisará de um navegador da web atualizado, 
 
 Para instalar este projeto, basta clonar este repositório em sua máquina local. Você pode fazer isso usando o Git, executando o seguinte comando no terminal:
 
-git clone https://github.com/Policarpo7/Site-de-vendas.git
+git clone https://github.com/Policarpo7/site-de-vendas.git
 
 **Uso**
 
