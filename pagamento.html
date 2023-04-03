@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="stylespagamento.css" />
+    <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<header>
+    <span>Pagamento</span>
+</header>
+<main>
+    <div class="page-title">Resumo do Pedido</div>
+    <div class="content">
+        <section>
+            <div><span>Produtos: </span><span id="produtos"></span></div>
+            <div><span>Valor total: </span><span id="valor"></span></div>
+        </section>
+        <aside>
+            <div class="box">
+                <header>Efetue o pagamento pelo aplicativo do seu banco, através do QR Code PIX abaixo. Envie o comprovante no WhatsApp!</header>
+                <div class="info">
+                    <div>
+                        <img src="fotos/qrcode-pix.png" alt="QR Code Pix" id="qrcode">
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+<script src="pagamento.js"></script>
+</body>
+</html>

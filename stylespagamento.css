@@ -1,0 +1,98 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    flex: 1;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+section > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+aside {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.box {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.box header,
+.box footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info {
+    margin-bottom: 1rem;
+}
+
+.info > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}

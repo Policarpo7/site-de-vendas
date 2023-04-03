@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Policarpo's Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<h1>Policarpo's Store</h1>
+	<nav>
+		<ul>
+			<li><a href="sobremim.html">Sobre Mim</a></li>
+			<li><a href="carrinho.html">Carrinho</a></li>
+			<li><a href="https://wa.me/+5561999959996">Whatsapp</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section>
+	<article>
+		<img src="fotos/Camisa-Real-preta.jpg" alt="Produto 1">
+		<h3>Camisa Real Madrid 18/19</h3>
+		<p>Versão Torcedor.</p>
+		<button data-id="1">Comprar</button>
+	</article>
+
+	<article>
+		<img src="fotos/real-branca.jpg" alt="Produto 2">
+		<h3>Camisa Real Madrid HOME 22/23</h3>
+		<p>Versão Torcedor.</p>
+		<button data-id="2">Comprar</button>
+	</article>
+
+	<article>
+		<img src="fotos/real-verde.jpg" alt="Produto 3">
+		<h3>Camisa Real Madrid verde 19/20</h3>
+		<p>Versão Torcedor.</p>
+		<button data-id="3">Comprar</button>
+	</article>
+</section>
+<script src="storage.js"></script>
+<script>
+	const buttons = document.querySelectorAll('button');
+	const products = [
+		{
+			id: 1,
+			title: "Camisa Real Madrid 18/19",
+			description: "Versão Torcedor.",
+			img: "fotos/Camisa-Real-preta.jpg",
+			price: 130,
+			className: "Camisa Real Madrid 18/19"
+		},
+		{
+			id: 2,
+			title: "Camisa Real Madrid HOME 22/23",
+			description: "Versão Torcedor.",
+			img: "fotos/real-branca.jpg",
+			price: 130,
+			className: "Camisa Real Madrid HOME 22/23"
+		},
+		{
+			id: 3,
+			title: "Camisa Real Madrid verde 19/20",
+			description: "Versão Torcedor.",
+			img: "fotos/real-verde.jpg",
+			price: 130,
+			className: "Camisa Real Madrid verde 19/20"
+		}
+	];
+
+	buttons.forEach(button => {
+		button.addEventListener('click', () => {
+			const productId = parseInt(button.getAttribute('data-id'));
+			const product = products.find(p => p.id === productId);
+			Storage.addToCart({ ...product, quantity: 1 });
+			alert('Produto adicionado ao carrinho!');
+		});
+	});
+</script>
+</body>
+</html>

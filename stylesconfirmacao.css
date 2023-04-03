@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    background-color: #900;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#order-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b00;
+}
+
+.confirm-purchase {
+    display: block;
+    margin: 20px auto;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column {
+    width: 48%;
+}
+
+.pix-container {
+    margin-top: 20px;
+}

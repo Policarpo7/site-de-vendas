@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Helvetica");
+@import url("https://fonts.googleapis.com/css?family=Verdana");
+
+@media (min-width: 1024px) {
+
+/*general styles*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bgColor: #E0E5F7;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to right, #87bdd8 0%, #b7d7e8 100%);
+}
+
+body {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	min-width: 1024px;
+}
+
+.wrapper {
+	max-width: 100%;
+	overflow: hidden;
+	margin: 3vh;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 10vh;
+}
+
+/*columns position*/
+
+#heroContainer {
+	grid-column: 1/2;
+}
+
+#aboutContainer {
+	grid-column: 2/3;
+}
+
+#projectsContainer {
+	grid-column: 3/4;
+	margin: 5vh auto;
+}
+
+/*rows position*/
+
+#heroContainer {
+	grid-row: 1/2;
+}
+
+#aboutContainer, #projectsContainer {
+	grid-row: 1/3;
+}
+
+#contactContainer {
+	grid-row: 2/3;
+}
+
+.title  {
+	margin-top: 2vh;
+}
+
+
+h2 {
+	margin: 0 auto;
+	font-family: Helvetica;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*hero container styles*/
+
+#heroContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2vh;
+}
+
+#heroHeader > figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30vh;
+	height: 30vh;
+	margin: 0 auto 2vh;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: white;
+}
+
+.heroPhoto {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+
+.profileName, .profileCarrer {
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.profileName {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.profileCarrer {
+	font-size: 0.8rem;
+}
+
+.heroIcons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.techIcons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3vh auto 0;
+}
+
+.icons {
+	max-width: 5vh;
+	max-height: 5vh;
+	margin: 0 1vh;
+}
+
+.techTxt {
+	margin: 1vh auto 0vh;
+	text-transform: uppercase;
+}
+
+/*about container styles*/
+
+#aboutContainer {
+	background-color: white;
+	border-style: none;
+	border-radius: 2vh;
+	display: flex;
+}
+
+.aboutItens {
+	max-width: 100%;
+	margin: 2vh auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about {
+	font-family: Helvetica;
+	font-size: 1.3rem;
+	line-height: 150%;
+	margin: 2vh auto;
+	max-width: 80%;
+}
+
+/*projects container styles*/
+
+#projectsContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#projectsContainer figure {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2vh auto;
+}
+
+.projectIcon {
+	width: 20vh;
+	height: 20vh;
+	margin: 1vh 0;
+	text-align: center;
+	border-style: none;
+	border-radius: 1vh;
+	overflow: hidden;
+}
+
+.projectImgLabel{
+	position: relative;
+}
+
+/*figcaption styles start*/
+
+figcaption {
+	position: absolute;
+	top: 0;
+	margin: 1vh 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	height: 10vh;
+	width: 35vh;
+	border-style: none;
+	border-radius: 1vh;
+	transition: all 0.4s ease;
+	background-color: rgba(0,0,0, .5);
+}
+
+#caption1 {
+	opacity: 0;
+}
+
+#caption2 {
+	opacity: 0;
+}
+
+#caption3 {
+	opacity: 0;
+}
+
+#caption1:hover, #caption2:hover, #caption3:hover {
+	opacity: 1;
+}
+
+/*figcaption styles end*/
+
+/*contact container styles*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer h2 {
+	display: none;
+}
+
+.contactBox {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 1vh auto;
+}
+
+.contactItems {
+	max-width: 100%;
+	margin: .5vh 3vh;
+}
+
+.contactItemLabel {
+	display: flex;
+	align-items: center;
+}
+
+.contactItemLabel img{
+	margin-right: 1vh;
+	width: 3vh;
+	height: 3vh;
+}
+
+.contactTxt {
+	text-transform: capitalize;
+}
+
+.contactLinks {
+	text-decoration: none;
+}
+
+/*media end*/
+}

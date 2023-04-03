@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Helvetica");
+@import url("https://fonts.googleapis.com/css?family=Verdana");
+
+@media (max-width: 1024px) {
+
+/*general styles*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bgColor: #E0E5F7;
+}
+
+html {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(to right, #87bdd8 0%, #b7d7e8 100%);
+}
+
+body {
+	box-sizing: border-box;
+	max-width: 1024px;
+}
+
+h2 {
+	margin: 0 auto;
+	font-family: Helvetica;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.title  {
+	margin-top: 2vh;
+}
+
+.about, .contactEmail {
+	font-family: Helvetica;
+	font-size: 1.2rem;
+}
+
+.wrapper {
+	max-width: 100%;
+}
+
+/*hero container styles*/
+
+#heroContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2vh;
+}
+
+#heroHeader > figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30vh;
+	height: 30vh;
+	margin: 0 auto 2vh;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: white;
+}
+
+.heroPhoto {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+
+.profileName, .profileCarrer {
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.profileName {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.profileCarrer {
+	font-size: 0.8rem;
+}
+
+.heroIcons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.techIcons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3vh auto 0;
+}
+
+.icons {
+	max-width: 5vh;
+	max-height: 5vh;
+	margin: 0 1vh;
+}
+
+.techTxt {
+	margin: 1vh auto 0vh;
+	text-transform: uppercase;
+}
+
+/*about container styles*/
+
+.aboutItens {
+	max-width: 100%;
+	margin: 2vh auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about {
+	margin: 2vh auto;
+	max-width: 90%;
+}
+
+/*projects container styles*/
+
+#projectsContainer figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2vh;
+}
+
+.projectIcon {
+	min-width: 70%;
+	min-height: 10vh;
+	margin: 1vh 0;
+	text-align: center;
+	border-style: none;
+	border-radius: 1vh;
+	background-color: var(--bgColor);
+}
+
+.projectImgLabel a {
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: black;
+}
+
+/*contact container styles*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0,0,0,.1);
+}
+
+footer > .title {
+	margin-bottom: 1vh;
+	display: none;
+}
+
+.contactBox {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 1vh auto;
+}
+
+.contactItems {
+	margin: 1.5vh 4vh;
+}
+
+.contactItemLabel {
+	display: flex;
+	align-items: center;
+}
+
+.contactItemLabel img{
+	margin-right: 1vh;
+	width: 4vh;
+	height: 4vh;
+}
+
+.contactTxt {
+	text-transform: capitalize;
+}
+
+.contactLinks {
+	text-decoration: none;
+}
+
+}
