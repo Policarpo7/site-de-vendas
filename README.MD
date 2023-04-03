@@ -16,8 +16,6 @@ git clone https://github.com/Policarpo7/Site-de-vendas.git
 
 cd Site-de-vendas
 
-cd site
-
 Basta abrir o arquivo site.html em seu navegador da web para visualizar o site. O site é responsivo e se ajustará automaticamente ao tamanho da tela do dispositivo do usuário.
 
 **Contribuição**
