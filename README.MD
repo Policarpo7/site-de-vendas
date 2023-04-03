@@ -1,4 +1,4 @@
-Site de Vendas em HTML,CSS, SCSS E JavaScript
+**Site de Vendas em HTML,CSS, SCSS E JavaScript**
 
 Este é o repositório do meu site de vendas em HTML e CSS. O objetivo deste projeto é criar um site responsivo e fácil de navegar para que os usuários possam comprar produtos com facilidade.
 
